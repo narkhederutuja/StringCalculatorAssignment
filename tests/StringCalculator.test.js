@@ -9,3 +9,8 @@ test("should return the number itself when one number is provided", () => {
     const calculator = new StringCalculator();
     expect(calculator.add("1")).toBe(1);
 });
+
+test("should return the sum of two numbers separated by a comma", () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1,2")).toBe(3);
+});
